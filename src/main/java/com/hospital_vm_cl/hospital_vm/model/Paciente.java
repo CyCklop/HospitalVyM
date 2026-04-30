@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 public class Paciente {
     @Id // Indica que el campo anotado es el id primario de la entidad
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Define la estrategia para generar el valor del id primario
-    private int id;
+    private Integer id;
 
     @Column(unique = true, length = 13, nullable = false) // Configura la columna de la base de datos
     private String run;
